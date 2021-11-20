@@ -1,7 +1,7 @@
-import collections from '../../../../data/collections.json'
 import axios from 'axios'
 import request from 'request'
 import Web3 from 'web3'
+import collections from '../../../../data/collections.json'
 import { erc721 } from '../../../../data/abis'
 
 const isMinted = async (contractAddress, id) => {
@@ -27,9 +27,9 @@ const endpoint = async (req, res) => {
         const minted = await isMinted(contractAddress, id)
 
         if (!minted) {
-            const hiddenImage = 'https://i.imgur.com/V2RKCJW.png'
+            const hiddenImage = `${fullUrl}/img/question-mark.gif`
             if (get === 'image') return request(hiddenImage).pipe(res)
-            return res.json({ name: 'Hidden!', image: hiddenImage })
+            return res.json({ name: 'Unknown', image: hiddenImage })
         }
 
         const url = `${thisCollection.metadata}/${id}`
