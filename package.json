@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "node src/server.js",
         "build": "next build",
-        "start": "NODE_ENV=production node src/server.js"
+        "start": "node src/server.js"
     },
     "dependencies": {
         "axios": "^0.24.0",
