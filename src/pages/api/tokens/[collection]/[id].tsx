@@ -17,7 +17,6 @@ const isMinted = async (contractAddress, id) => {
 
 export default async function endpoint(req, res) {
     try {
-        // const { collection } = req.params
         const { collection, id, get } = req.query
 
         const thisCollection = collections.find((c) => c.name === collection)
