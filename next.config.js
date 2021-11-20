@@ -2,8 +2,8 @@ module.exports = {
     async rewrites() {
         return [
             {
-                source: '/api/:path*',
-                destination: 'https://api.example.com/:path*'
+                source: '/api/:slug*',
+                destination: 'https://mask.fantom.digital/api/:slug*'
             }
         ]
     },
