@@ -17,26 +17,32 @@ const isMinted = async (contractAddress, id) => {
 
 const endpoint = async (req, res) => {
     try {
-        const { collection, id, get } = req.query
+        const fullUrl = `http://${req.headers.host}`
+        const { collection, id: idFromQuery, get } = req.query
+        let id = idFromQuery
 
         const thisCollection = collections.find((c) => c.name === collection)
-        const fullUrl = `http://${req.headers.host}`
 
-        const contractAddress = thisCollection.contract
+        const isRequestingImage = ['.png', '.gif', '.jpeg', '.jpg'].some((ext) => id.toLowerCase().endsWith(ext))
+        if (isRequestingImage) id = id.split('.')[0]
 
-        const minted = await isMinted(contractAddress, id)
-
+        const minted = await isMinted(thisCollection.contract, id)
         if (!minted) {
             const hiddenImage = `${fullUrl}/img/question-mark.gif`
-            if (get === 'image') return request(hiddenImage).pipe(res)
+            if (isRequestingImage) return request(hiddenImage).pipe(res)
             return res.json({ name: 'Unknown', image: hiddenImage })
         }
 
         const url = `${thisCollection.metadata}/${id}`
-
         const { data } = await axios.get(url)
-        if (get === 'image.png') return request(data.image).pipe(res)
-        data.image = `${fullUrl}/api/tokens/${collection}/${id}?get=image.png`
+
+        // Get image extensions from image URI and/or config.
+        const extTest = /(?:\.([^.]+))?$/
+        const ext = thisCollection.ext || extTest.exec(data.image)[1]
+
+        if (isRequestingImage) return request(data.image).pipe(res)
+
+        data.image = `${fullUrl}/api/tokens/${collection}/${id}.${ext}`
         res.json(data)
     } catch (error) {
         // console.log(error)
