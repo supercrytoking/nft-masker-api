@@ -56,4 +56,4 @@ const allowCors = (fn) => async (req, res) => {
     fn(req, res)
 }
 
-export default allowCors(endpoint)
+export default endpoint
