@@ -15,7 +15,7 @@ const isMinted = async (contractAddress, id) => {
     }
 }
 
-const endpoint = async () =>(req, res) {
+const endpoint = async (req, res) => {
     try {
         const { collection, id, get } = req.query
 
