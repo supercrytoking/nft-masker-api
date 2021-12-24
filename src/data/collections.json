@@ -1,4 +1,5 @@
 [
     { "name": "frogs", "contract": "0xA03c5a2E339C8c28fe1a69AEC528EE2F25Fa12cC", "metadata": "https://oerszexrnffsjwiltxox.supabase.in/storage/v1/object/public/frogs/frogs/metadata" },
-    { "name": "ernesta", "contract": "0x7387b71d022acace5be926beecbb6444fb383464", "metadata": "https://lgivhlsldntdvpxaoznf.supabase.in/storage/v1/object/public/ernesto/ernesta/metadata" }
+    { "name": "ernesta", "contract": "0x7387b71d022acace5be926beecbb6444fb383464", "metadata": "https://lgivhlsldntdvpxaoznf.supabase.in/storage/v1/object/public/ernesto/ernesta/metadata" },
+    { "name": "lilnesto", "contract": "0x5721e2e794C6718f08E998bB3430A0D997BDfA13", "metadata": "https://lgivhlsldntdvpxaoznf.supabase.in/storage/v1/object/public/ernesto/lilnesto/metadata" }
 ]
