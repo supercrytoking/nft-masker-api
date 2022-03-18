@@ -11,5 +11,15 @@
         "name": "hamsteria",
         "contract": "0x0Ef9d39bbBED9C4983Ddc4a1E189eE4938D837b3",
         "metadata": "https://gateway.pinata.cloud/ipfs/QmXmxDPMw1ziwQ8EMKS5y5jq7sQTmemtHGi5JwscXjn3zD"
+    },
+    {
+        "name": "hamsteria",
+        "contract": "0x0Ef9d39bbBED9C4983Ddc4a1E189eE4938D837b3",
+        "metadata": "https://gateway.pinata.cloud/ipfs/QmXmxDPMw1ziwQ8EMKS5y5jq7sQTmemtHGi5JwscXjn3zD"
+    },
+    {
+        "name": "fruits",
+        "contract": "0x182Bb65f3d3787E2C6fCCFB98D051a21AB1D85cc",
+        "metadata": "https://oerszexrnffsjwiltxox.supabase.in/storage/v1/object/public/fruits/metadata"
     }
 ]
