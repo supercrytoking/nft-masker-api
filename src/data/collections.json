@@ -26,5 +26,20 @@
         "name": "fruits",
         "contract": "0x182Bb65f3d3787E2C6fCCFB98D051a21AB1D85cc",
         "metadata": "https://oerszexrnffsjwiltxox.supabase.in/storage/v1/object/public/fruits/metadata"
+    },
+    {
+        "name": "fantomites-zenith",
+        "contract": "0x80be04d1abd0592184B204a584eFa061dEdaF088",
+        "metadata": "https://nyc3.digitaloceanspaces.com/fantomdigital/fantomites-xx660/zenith/metadata"
+    },
+    {
+        "name": "fantomites-syndicate",
+        "contract": "0xf0584f0d0ff6297701879E20d0493740d2B6691f",
+        "metadata": "https://nyc3.digitaloceanspaces.com/fantomdigital/fantomites-xx660/syndicate/metadata"
+    },
+    {
+        "name": "fantomites-higher-order",
+        "contract": "0x6355e47D71b870B1Ee9cf528Fe3Ce37336468bE5",
+        "metadata": "https://nyc3.digitaloceanspaces.com/fantomdigital/fantomites-xx660/higher-order/metadata"
     }
 ]
