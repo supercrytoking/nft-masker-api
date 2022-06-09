@@ -1,7 +1,19 @@
 [
-    { "name": "frogs", "contract": "0xA03c5a2E339C8c28fe1a69AEC528EE2F25Fa12cC", "metadata": "https://oerszexrnffsjwiltxox.supabase.in/storage/v1/object/public/frogs/frogs/metadata" },
-    { "name": "ernesta", "contract": "0x7387b71d022acace5be926beecbb6444fb383464", "metadata": "https://lgivhlsldntdvpxaoznf.supabase.in/storage/v1/object/public/ernesto/ernesta/metadata" },
-    { "name": "lilnesto", "contract": "0x5721e2e794C6718f08E998bB3430A0D997BDfA13", "metadata": "https://lgivhlsldntdvpxaoznf.supabase.in/storage/v1/object/public/ernesto/lilnesto/metadata" },
+    {
+        "name": "frogs",
+        "contract": "0xA03c5a2E339C8c28fe1a69AEC528EE2F25Fa12cC",
+        "metadata": "https://oerszexrnffsjwiltxox.supabase.in/storage/v1/object/public/frogs/frogs/metadata"
+    },
+    {
+        "name": "ernesta",
+        "contract": "0x7387b71d022acace5be926beecbb6444fb383464",
+        "metadata": "https://lgivhlsldntdvpxaoznf.supabase.in/storage/v1/object/public/ernesto/ernesta/metadata"
+    },
+    {
+        "name": "lilnesto",
+        "contract": "0x5721e2e794C6718f08E998bB3430A0D997BDfA13",
+        "metadata": "https://lgivhlsldntdvpxaoznf.supabase.in/storage/v1/object/public/ernesto/lilnesto/metadata"
+    },
     {
         "name": "frog-keycards",
         "contract": "0xb6460f26f1d189372c72c026390fdc90af24980a",
@@ -10,17 +22,12 @@
     {
         "name": "hamsteria",
         "contract": "0x0Ef9d39bbBED9C4983Ddc4a1E189eE4938D837b3",
-        "metadata": "https://gateway.pinata.cloud/ipfs/QmXmxDPMw1ziwQ8EMKS5y5jq7sQTmemtHGi5JwscXjn3zD"
-    },
-    {
-        "name": "hamsteria",
-        "contract": "0x0Ef9d39bbBED9C4983Ddc4a1E189eE4938D837b3",
-        "metadata": "https://gateway.pinata.cloud/ipfs/QmXmxDPMw1ziwQ8EMKS5y5jq7sQTmemtHGi5JwscXjn3zD"
+        "metadata": "https://ftmdead.mypinata.cloud/ipfs/QmXmxDPMw1ziwQ8EMKS5y5jq7sQTmemtHGi5JwscXjn3zD"
     },
     {
         "name": "hamsteria-v2",
         "contract": "0x245c236Ce2bE6f7E92254Bb7C55b9Ad3ee563df4",
-        "metadata": "https://gateway.pinata.cloud/ipfs/QmY1ETvnJtcJa4eAhKiFVorB5U2h3eUMYAjkb7z54qqb5w"
+        "metadata": "https://ftmdead.mypinata.cloud/ipfs/QmY1ETvnJtcJa4eAhKiFVorB5U2h3eUMYAjkb7z54qqb5w"
     },
     {
         "name": "fruits",
