@@ -4,6 +4,16 @@ import Web3 from 'web3'
 import collections from '../../../../data/collections.json'
 import { erc721 } from '../../../../data/abis'
 
+export const ipfsGateway = 'https://ftmdead.mypinata.cloud/ipfs/'
+export const imageUrl = (string = "") => {
+    string = string.replace('ipfs://', ipfsGateway)
+    string = string.replace('https://ipfs.io/ipfs/', ipfsGateway)
+    string = string.replace('https://ipfs.io/ipfs/', ipfsGateway)
+    string = string.replace('https://gateway.pinata.cloud/ipfs/', ipfsGateway)
+    return string
+}
+
+
 const isMinted = async (contractAddress, id) => {
     const web3 = await new Web3('https://rpc.ftm.tools')
     const contract = await new web3.eth.Contract(erc721, contractAddress)
@@ -15,9 +25,10 @@ const isMinted = async (contractAddress, id) => {
     }
 }
 
+
 const endpoint = async (req, res) => {
     try {
-        const fullUrl = `http://${req.headers.host}`
+        const fullUrl = `https://${req.headers.host}`
         const { collection, id: idFromQuery, get } = req.query
         let id = idFromQuery
 
@@ -40,7 +51,7 @@ const endpoint = async (req, res) => {
         const extTest = /(?:\.([^.]+))?$/
         const ext = thisCollection.ext || extTest.exec(data.image)[1]
 
-        if (isRequestingImage) return request(data.image).pipe(res)
+        if (isRequestingImage) return request(imageUrl(data.image)).pipe(res)
 
         data.image = `${fullUrl}/api/tokens/${collection}/${id}.${ext}`
         res.json(data)
