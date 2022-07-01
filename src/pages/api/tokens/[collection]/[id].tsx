@@ -15,8 +15,8 @@ export const imageUrl = (string = "") => {
 
 
 const isMinted = async (contractAddress, id) => {
-    const web3 = await new Web3('https://rpc.ftm.tools')
-    const contract = await new web3.eth.Contract(erc721, contractAddress)
+    const web3 = new Web3('https://rpc.ankr.com/fantom')
+    const contract = new web3.eth.Contract(erc721, contractAddress)
     try {
         const _isMinted = await contract.methods.ownerOf(id).call()
         return true
@@ -56,7 +56,7 @@ const endpoint = async (req, res) => {
         data.image = `${fullUrl}/api/tokens/${collection}/${id}.${ext}`
         res.json(data)
     } catch (error) {
-        // console.log(error)
+        console.log(error)
         res.status(500).send(error.message)
     }
 }
