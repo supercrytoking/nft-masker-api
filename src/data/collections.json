@@ -31,8 +31,13 @@
     },
     {
         "name": "fruits",
-        "contract": "0x182Bb65f3d3787E2C6fCCFB98D051a21AB1D85cc",
+        "contract": "0x681535b766Ce7e8AA9B274Aee791Ba0217c67096",
         "metadata": "https://oerszexrnffsjwiltxox.supabase.in/storage/v1/object/public/fruits/metadata"
+    },
+    {
+        "name": "felines",
+        "contract": "0x182Bb65f3d3787E2C6fCCFB98D051a21AB1D85cc",
+        "metadata": "https://nyc3.digitaloceanspaces.com/fantomdigital/felines-8wkzx/metadata"
     },
     {
         "name": "fantomites-zenith",
